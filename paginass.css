@@ -1,0 +1,175 @@
+/* Estilos básicos */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+/* Título */
+.titulo-container {
+    text-align: center;
+    margin-top: 60px;
+    color: #2c3e50;
+}
+
+.titulo-container h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+}
+
+.titulo-container p {
+    font-size: 20px;
+    color: #7f8c8d;
+}
+
+/* Sección Principal */
+.orfeberia-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    margin-top: 40px;
+}
+
+.orfeberia-text {
+    width: 45%;
+    font-size: 18px;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+.orfeberia-text h2 {
+    font-size: 32px;
+    font-family: 'Georgia', serif;
+    margin-bottom: 20px;
+    color: #e74c3c;
+}
+
+.orfeberia-text p {
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+/* Imágenes de la Orfebrería */
+.orfeberia-images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 50%;
+}
+
+.image-box {
+    width: 30%;
+    text-align: center;
+}
+
+.orfeberia-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.image-description {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Menú hamburguesa */
+.menu-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.menu-icon {
+    font-size: 35px;
+    cursor: pointer;
+    color: #2c3e50;
+}
+
+.menu {
+    display: none;
+    background-color: #2c3e50;
+    padding: 15px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+
+.menu.active {
+    display: block;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+}
+
+/* Botón Continuar */
+.continuar-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn-continuar {
+    background-color: #920dff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-continuar:hover {
+    background-color: #1e008b;
+}
+
+/* Secciones */
+.seccion-container {
+    padding: 40px;
+    margin: 20px 0;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+/* Ajuste para las imágenes de la galería */
+.orfeberia-image {
+    width: 100%;          /* Hacer la imagen ocupar el 100% del contenedor */
+    max-width: 250px;     /* Limitar el tamaño máximo a 400px */
+    height: auto;         /* Mantener las proporciones */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efectos al pasar el ratón sobre la imagen */
+.orfeberia-image:hover {
+    transform: scale(1.05);  /* Ligero zoom al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+

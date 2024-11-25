@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orfebrería del Istmo</title>
+    <link rel="stylesheet" href="paginass.css">
+    <script src="paginaswb.js" defer></script>
+    
+</head>
+<body>
+    <!-- Menú hamburguesa -->
+    <div class="menu-container">
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> <!-- Icono de hamburguesa -->
+        <div id="menu" class="menu">
+            <ul>
+                <li><a href="#" onclick="mostrarImagen('centenario')">Centenarios</a></li>
+                <li><a href="#" onclick="mostrarImagen('anillos')">Anillos</a></li>
+                <li><a href="#" onclick="mostrarImagen('aretes')">Aretes</a></li>
+                <li><a href="#" onclick="mostrarImagen('pulseras')">Pulseras</a></li>
+                <li><a href="#" onclick="mostrarSeccion('acerca')">Acerca de</a></li>
+                <li><a href="#" onclick="mostrarSeccion('comentarios')">Comentarios</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Título de la página -->
+    <div class="titulo-container">
+        <h1>Orfebrería del Istmo de Tehuantepec</h1>
+        <p>La tradición de la orfebrería que captura la esencia del Istmo de Tehuantepec.</p>
+    </div>
+
+    <!-- Sección Principal de la Orfebrería -->
+    <section class="orfeberia-main">
+        <div class="orfeberia-text">
+            <h2>La Orfebrería del Istmo de Tehuantepec</h2>
+            <p>La orfebrería del Istmo de Tehuantepec tiene siglos de historia, una tradición que ha sido pasada de generación en generación. Los artesanos de esta región se especializan en crear piezas únicas, hechas a mano, con metales preciosos como el oro y la plata, a menudo combinados con piedras semipreciosas.</p>
+            <p>Las joyas del Istmo de Tehuantepec reflejan la rica cultura zapoteca, mezclando lo antiguo con lo moderno en sus diseños. Las mujeres zapotecas han sido las principales portadoras de estas creaciones, y las piezas de orfebrería son esenciales en sus trajes tradicionales, especialmente en las festividades y celebraciones.</p>
+            <p>Entre las piezas más emblemáticas de la orfebrería del Istmo se encuentran los famosos Centenarios, que simbolizan la riqueza y el legado histórico de la región, y los elaborados anillos, pulseras y aretes que representan la belleza y el arte zapoteco.</p>
+        </div>
+        
+        <!-- Imágenes de la Orfebrería -->
+        <div class="orfeberia-images">
+            <div class="image-box">
+                <img src="imagenes/centenario.jpg" alt="Centenario" class="orfeberia-image">
+                <p class="image-description">Centenario: Una joya de oro que ha perdurado por generaciones.</p>
+            </div>
+            <div class="image-box">
+                <img src="imagenes/anillos.jpg" alt="Anillo" class="orfeberia-image">
+                <p class="image-description">Anillo Zapoteco: Diseño tradicional hecho a mano con gran detalle.</p>
+            </div>
+            <div class="image-box">
+                <img src="imagenes/aretes.jpg" alt="Aretes" class="orfeberia-image">
+                <p class="image-description">Aretes de plata con detalles que resaltan la cultura zapoteca.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenedor para las imágenes y especificaciones -->
+    <div id="imagen-container" class="imagen-container">
+        <!-- Las imágenes y especificaciones se cambiarán con JavaScript -->
+    </div>
+
+    <!-- Sección Acerca de -->
+    <div id="acerca-de-container" class="seccion-container" style="display: none;">
+        <h2>Acerca de</h2>
+        <p>Orfebrería del Istmo es una marca que promueve la joyería artesanal del Istmo de Tehuantepec. Rescatamos las tradiciones orfebres de la región, fusionando las técnicas ancestrales con la innovación moderna para ofrecerte joyas únicas, llenas de historia y cultura.</p>
+    </div>
+
+    <!-- Sección Comentarios -->
+    <div id="comentarios-container" class="seccion-container" style="display: none;">
+        <h2>Comentarios</h2>
+        <p>"Las piezas de la Orfebrería del Istmo son una verdadera obra de arte. El detalle y la calidad son excepcionales. ¡Totalmente recomendados!"</p>
+        <p>"Me encantaron los anillos. Se nota la dedicación y la cultura zapoteca en cada diseño. ¡Volveré por más!"</p>
+    </div>
+
+    <!-- Botón Continuar -->
+    <div class="continuar-container">
+        <button class="btn-continuar">Continuar</button>
+    </div>
+
+</body>
+</html>
